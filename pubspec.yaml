@@ -1,0 +1,183 @@
+name: cirilla
+description: Cirilla - Multipurpose Flutter App For Wordpress & Woocommerce
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.3
+  feather_icons: ^1.1.0-nullsafety.0
+  font_awesome_flutter: ^9.1.0
+  google_fonts: ^2.1.0
+
+  # UI library for app
+  ui:
+    path: ../ui
+  gutenberg_blocks:
+    path: ../gutenberg_blocks
+  awesome_bottom_nav_bar:
+    path: ../awesome_bottom_nav_bar
+
+  # Wraps platform-specific persistent storage for simple data
+  shared_preferences: ^2.0.6
+  shared_preferences_web: ^2.0.1
+
+  # State-management library
+  mobx: ^2.0.4
+  flutter_mobx: ^2.0.2
+
+  # A wrapper around InheritedWidget to make them easier to use and more reusable.
+  provider: ^5.0.0
+
+  # A powerful Http client for Dart
+  dio: ^4.0.0
+
+  # A set of cryptographic hashing functions implemented in pure Dart
+  crypto: ^3.0.1
+
+  # A collection of loading indicators animated with flutter
+  flutter_spinkit: ^5.0.0
+
+  json_annotation: ^4.0.1
+
+  # Slideshow and image gallery
+  flutter_swiper:
+    git: https://github.com/Arkangel12/flutter_swiper
+
+  # Photo view
+  photo_view: ^0.12.0
+
+  dotted_border: ^2.0.0+1
+
+  # A Flutter plugin that provides a Google Maps widget.
+  google_maps_flutter: ^2.0.6
+  google_maps_flutter_web: ^0.3.0+3
+
+  # A Flutter plugin for launching a URL.
+  url_launcher: ^6.0.9
+
+  # Drawer animation
+  flutter_zoom_drawer:
+    git: https://github.com/AppCheap/flutter_zoom_drawer.git
+
+  # Plugin to use the Firebase Core API
+  firebase_core: ^1.4.0
+
+  # Plugin to use the Firebase Auth
+  firebase_auth: ^3.0.1
+
+  # Plugin to use the Firebase Cloud Messaging API.
+  firebase_messaging: ^10.0.4
+  firebase_messaging_web: ^2.0.3
+
+  # Google Analytics for Firebase API.
+  firebase_analytics: ^8.2.0
+
+  # A cross platform plugin for displaying local notifications.
+  flutter_local_notifications: ^8.1.1
+
+  # Package generate pin code fields with beautiful design and animations
+  pin_code_fields: ^7.3.0
+
+  # Sign In Google
+  google_sign_in: ^5.0.7
+
+  # Sign In Apple
+  sign_in_with_apple: ^3.1.0
+
+  # Sign In facebook
+  flutter_facebook_auth: ^3.5.0
+
+  # Text animations
+  animated_text_kit: ^4.2.1
+
+  # Webview flutter
+  webview_flutter: ^2.0.12
+
+  # Format date time
+  intl: ^0.17.0
+
+  # Share content
+  share: ^2.0.4
+
+  # Shimmer loading
+  shimmer: ^2.0.0
+
+  # Play audio
+  just_audio: ^0.9.5
+
+  # Run audio and video in background
+  audio_service: ^0.18.0
+
+  # Cache image
+  cached_network_image: ^3.1.0
+
+  # A Flutter widget for rendering HTML and CSS as Flutter widgets.
+  flutter_html: ^2.1.1
+
+  flutter_sticky_header: ^0.6.0
+
+  html_unescape: ^2.0.0
+  recase: ^4.0.0
+  collection: ^1.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.1.1
+  mobx_codegen: ^2.0.2
+  json_serializable: ^4.1.4
+
+  # App's launcher icon
+  flutter_launcher_icons: ^0.9.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: google_fonts/Poppins-Regular.ttf
+        - asset: google_fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: google_fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: google_fonts/Poppins-SemiBold.ttf
+          weight: 600
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/lang/
+    - assets/images/
